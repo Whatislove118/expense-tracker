@@ -74,6 +74,28 @@ src/
 
 API base URL is read from `NEXT_PUBLIC_API_URL` (see `.env.local.example`).
 
+## Git Workflow
+
+Use **GitHub Flow**:
+
+1. **Create a feature branch** from `main`: `git checkout -b feature/your-feature-name`
+   - Branch naming: `feature/`, `fix/`, `docs/`, `refactor/`, `test/`, `ci/` prefix
+   - Use kebab-case: `feature/main-screen`, `fix/auth-bug`
+
+2. **Commit your changes** to the feature branch
+   - Push regularly: `git push -u origin feature/your-feature-name`
+
+3. **Create a pull request** when ready for review
+   - PR title should match commit convention
+   - Describe what changed and why
+
+4. **Review and merge** to `main`
+   - Rebase before merging (keep history clean): `git rebase main`
+   - Use "Create a merge commit" or "Squash and merge" (no fast-forward)
+   - Delete the feature branch after merging
+
+5. **Never force-push** to `main` or shared branches
+
 ## Commit convention
 Use Conventional Commits:
  - Type: feat, fix, docs, refactor, test, ci 
