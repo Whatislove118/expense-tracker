@@ -113,9 +113,11 @@ Use **GitHub Flow**:
 
 5. **Never force-push** to `main` or shared branches
 
+<important if="Need to do a commit">
 ## Commit convention
 Use Conventional Commits:
  - Type: feat, fix, docs, refactor, test, ci 
  - Scope: module or area of changes
  - Description on English, shortly
  - Breaking changes mark with ! symbol
+</important>
